@@ -1,0 +1,28 @@
+language: go
+
+go:
+  - 1.11.x
+  - tip
+
+os:
+  - linux
+  - osx
+
+dist: trusty
+
+sudo: false
+install: true
+
+before_install:
+  - go get -t -v ./...
+
+env:
+  -GO111MODULE=on
+  -CODECOV_TOKEN=3298cf34-5e45-4d98-8328-63e67e800cb1
+
+script:
+  - go build
+  - go test ./... -coverprofile=coverage.txt -covermode=atomic -coverpkg=github.com/j7mbo/goij
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
