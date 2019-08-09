@@ -771,7 +771,7 @@ Goij is not a dependency injection container, and it has a very simple API compa
 
 > I found a bug or a better way of implementing something
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.MD) and feel free to open a
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) and feel free to open a
 [new Github issue](https://github.com/J7mbo/Goij/issues/new) where we can discuss it.
 
 > How can I recompile the gen command?
