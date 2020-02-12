@@ -8,6 +8,9 @@
 
 Goij is a recursive dependency injector. Use Goij to bootstrap and wire together S.O.L.I.D, clean Go applications.
 
+> IMPORTANT NOTE: This was a experiment that I created *for fun*. Please don't use it in production, it's not stable. The idea itself is nice, and if you decide you are willing to accept the tradeoffs of runtime resolving vs compile-time then this is of course your prerogative. This will be left here for others to see some crazy ideas I had. You could look at google/wire if you want to generate factories, otherwise just wire everything up yourself until we have generics in Go. :-)
+
+
 ### Example
 
 ```Go
